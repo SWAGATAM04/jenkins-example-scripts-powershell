@@ -1,4 +1,4 @@
-
+#!/usr/bin/pwsh -Command
 echo "Checking IIS Server Status"
 
 echo "Checking if IIS is running"
