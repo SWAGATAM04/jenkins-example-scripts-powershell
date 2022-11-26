@@ -42,7 +42,7 @@ def processTask() {
 pipeline {
     // I prefer to have a dedicated node to execute admin tasks
     agent {
-        label "admin-agent"
+        label "windows"
     }
         
     options {
