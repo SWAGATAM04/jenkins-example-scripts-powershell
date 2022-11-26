@@ -7,14 +7,10 @@ pipeline {
   }
   stages {
     stage('version') {
-      steps {
-        sh 'pwsh --version'
-      }
+      node {
+             powershell 'Write-Output "Hello, World!"'
+           }
     }
-    stage('powershell') {
-      steps {
-        sh 'pwsh script.ps1'
-      }
-    }
+    
   }
 }
