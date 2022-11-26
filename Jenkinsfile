@@ -2,14 +2,14 @@ pipeline {
   agent 
   {
     node {
-        label 'windows1' 'windows2' 
+        label 'windows2' 
          }
   }
   stages {
     stage('version') {
-      steps {
-        powershell 'Write-Output "Hello, World!"'
-      }
+      node {
+             powershell 'Write-Output "Hello, World!"'
+           }
     }
     
   }
