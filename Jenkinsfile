@@ -1,6 +1,6 @@
 pipeline {
   agent {
-      node('mysql && iis')
+      node('mysql')
   }
   stages {
     stage('version') {
