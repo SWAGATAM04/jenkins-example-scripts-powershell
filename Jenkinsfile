@@ -1,9 +1,7 @@
 pipeline {
   agent 
   {
-    node {
         label 'windows'
-         }
   }
   stages {
     stage('version') {
