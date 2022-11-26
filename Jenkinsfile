@@ -7,7 +7,7 @@ pipeline {
   }
   stages {
     stage('version') {
-      node {
+      steps {
              powershell 'Write-Output "Hello, World!"'
            }
     }
