@@ -1,7 +1,7 @@
 pipeline {
   agent 
   {
-     label 'windows1 || windows2'
+     label 'windows1  &&  windows2'
   }
   stages {
     stage('version') {
