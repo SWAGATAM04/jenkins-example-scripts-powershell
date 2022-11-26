@@ -1,6 +1,6 @@
 pipeline {
   agent {
-      node('windows1 && windows2')
+      node('mysql && iis')
   }
   stages {
     stage('version') {
