@@ -6,9 +6,9 @@ pipeline {
         sh 'pwsh --version'
       }
     }
-    stage('hello') {
+    stage('powershell') {
       steps {
-        sh 'pwsh hello.ps1'
+        sh 'pwsh script.ps1'
       }
     }
   }
