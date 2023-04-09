@@ -1,12 +1,10 @@
 pipeline {
-  agent {
-    { node { label 'slave01' } }
-  }
-  stages {
-    stage('version') {
-      steps {
-        java -version
-      }
+agent {label 'slave01'}
+
+stages {
+    stage('jdkversion') {
+        steps {
+            java -version
+        }
     }
-  }
 }
