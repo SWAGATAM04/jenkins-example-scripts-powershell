@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    { node { label 'mysql && iis' } }
+    { node { label 'slave01' } }
   }
   stages {
     stage('version') {
       steps {
-        powershell 'Write-Output "Hello, World!"'
+        java -version
       }
     }
   }
